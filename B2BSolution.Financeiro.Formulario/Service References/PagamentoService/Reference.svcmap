@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f485df85-78a0-4a5e-b176-ecfb0acc0ec8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://66.232.110.156:81/PagamentoService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PagamentoService.xsd" MetadataType="Schema" ID="dc90caf6-4af7-43fb-aebe-6e3a808198bd" SourceId="1" SourceUrl="http://66.232.110.156:81/PagamentoService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PagamentoService1.xsd" MetadataType="Schema" ID="541a4640-3df2-41d4-a52d-a7a7c37ad436" SourceId="1" SourceUrl="http://66.232.110.156:81/PagamentoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PagamentoService.wsdl" MetadataType="Wsdl" ID="c4059ed5-1e99-4112-9d89-995d24e9afbd" SourceId="1" SourceUrl="http://66.232.110.156:81/PagamentoService.svc?wsdl" />
+    <MetadataFile FileName="PagamentoService2.xsd" MetadataType="Schema" ID="548efb1e-bc2f-4feb-b638-fd67b6e49df6" SourceId="1" SourceUrl="http://66.232.110.156:81/PagamentoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PagamentoService.disco" MetadataType="Disco" ID="c0c12ca6-0d87-4393-953d-52f911b5a215" SourceId="1" SourceUrl="http://66.232.110.156:81/PagamentoService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

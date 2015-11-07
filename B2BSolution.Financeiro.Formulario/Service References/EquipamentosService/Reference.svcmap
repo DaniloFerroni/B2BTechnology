@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9ce58dca-6fc6-43f8-893a-4bb5510e3d54" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://66.232.110.156:81/EquipamentosService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EquipamentosService.xsd" MetadataType="Schema" ID="a94125a5-4224-47f5-821e-4c0216028e6e" SourceId="1" SourceUrl="http://66.232.110.156:81/EquipamentosService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EquipamentosService.disco" MetadataType="Disco" ID="ce95d8af-7801-43f2-8a7d-5d9b887913bc" SourceId="1" SourceUrl="http://66.232.110.156:81/EquipamentosService.svc?disco" />
+    <MetadataFile FileName="EquipamentosService1.xsd" MetadataType="Schema" ID="4a8de2b5-ff6a-45b7-89ae-6d53af6095e1" SourceId="1" SourceUrl="http://66.232.110.156:81/EquipamentosService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EquipamentosService2.xsd" MetadataType="Schema" ID="b4e464d7-c3bd-41ad-84b6-1f013b917e31" SourceId="1" SourceUrl="http://66.232.110.156:81/EquipamentosService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EquipamentosService.wsdl" MetadataType="Wsdl" ID="143e6fb6-fe80-42e4-964d-4df069c15bf5" SourceId="1" SourceUrl="http://66.232.110.156:81/EquipamentosService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

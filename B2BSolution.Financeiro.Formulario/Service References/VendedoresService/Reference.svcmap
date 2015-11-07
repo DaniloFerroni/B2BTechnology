@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5097ce06-785a-449d-a256-aa7e1c8ce867" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://66.232.110.156:81/VendedoresService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VendedoresService.xsd" MetadataType="Schema" ID="912ec389-a26b-4e62-a648-c9fadaaf4b63" SourceId="1" SourceUrl="http://66.232.110.156:81/VendedoresService.svc?xsd=xsd2" />
+    <MetadataFile FileName="VendedoresService1.xsd" MetadataType="Schema" ID="65cd325f-4aa3-41d9-a361-debb107fa482" SourceId="1" SourceUrl="http://66.232.110.156:81/VendedoresService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VendedoresService.disco" MetadataType="Disco" ID="9fac283e-2a72-439e-b671-9365f1b97f63" SourceId="1" SourceUrl="http://66.232.110.156:81/VendedoresService.svc?disco" />
+    <MetadataFile FileName="VendedoresService2.xsd" MetadataType="Schema" ID="93a4a1c7-367d-4ada-8412-b15216ace18f" SourceId="1" SourceUrl="http://66.232.110.156:81/VendedoresService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VendedoresService.wsdl" MetadataType="Wsdl" ID="33e3405e-f078-4283-a50a-26baddcdc13d" SourceId="1" SourceUrl="http://66.232.110.156:81/VendedoresService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

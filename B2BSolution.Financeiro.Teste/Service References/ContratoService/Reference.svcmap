@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="775a908e-fb4b-4c44-bca5-cdd6ddec7046" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49407/ContratoService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ContratoService.xsd" MetadataType="Schema" ID="7a95ee24-7d36-434f-b15a-ae1cabfedbce" SourceId="1" SourceUrl="http://localhost:49407/ContratoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ContratoService1.xsd" MetadataType="Schema" ID="836f544a-4615-4083-ac19-dc39be28df87" SourceId="1" SourceUrl="http://localhost:49407/ContratoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ContratoService.disco" MetadataType="Disco" ID="758fd718-08ca-454d-a0a1-6ae139b61df0" SourceId="1" SourceUrl="http://localhost:49407/ContratoService.svc?disco" />
+    <MetadataFile FileName="ContratoService2.xsd" MetadataType="Schema" ID="f7c4bae7-cddd-4174-bd51-1658a031a9d3" SourceId="1" SourceUrl="http://localhost:49407/ContratoService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ContratoService.wsdl" MetadataType="Wsdl" ID="532393f0-1420-4255-99a4-ea16f4411d25" SourceId="1" SourceUrl="http://localhost:49407/ContratoService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

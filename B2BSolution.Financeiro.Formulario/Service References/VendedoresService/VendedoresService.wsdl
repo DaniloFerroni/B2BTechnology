@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VendedoresService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://66.232.110.156:81/VendedoresService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://66.232.110.156:81/VendedoresService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://66.232.110.156:81/VendedoresService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/B2BSolution.Financeiro.Entidades" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IInserirOf_Vendedores_Incluir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Incluir" />
+  </wsdl:message>
+  <wsdl:message name="IInserirOf_Vendedores_Incluir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IncluirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntidadeOf_Vendedores_Entidade_InputMessage">
+    <wsdl:part name="parameters" element="tns:Entidade" />
+  </wsdl:message>
+  <wsdl:message name="IEntidadeOf_Vendedores_Entidade_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EntidadeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IListarTodosOf_Vendedores_ListarTodos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarTodos" />
+  </wsdl:message>
+  <wsdl:message name="IListarTodosOf_Vendedores_ListarTodos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarTodosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAlterarOf_Vendedores_Alterar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Alterar" />
+  </wsdl:message>
+  <wsdl:message name="IAlterarOf_Vendedores_Alterar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlterarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IInserirOf_Vendedores">
+    <wsdl:operation name="Incluir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInserirOf_Vendedores/Incluir" message="tns:IInserirOf_Vendedores_Incluir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInserirOf_Vendedores/IncluirResponse" message="tns:IInserirOf_Vendedores_Incluir_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IEntidadeOf_Vendedores">
+    <wsdl:operation name="Entidade">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntidadeOf_Vendedores/Entidade" message="tns:IEntidadeOf_Vendedores_Entidade_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntidadeOf_Vendedores/EntidadeResponse" message="tns:IEntidadeOf_Vendedores_Entidade_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IListarTodosOf_Vendedores">
+    <wsdl:operation name="ListarTodos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IListarTodosOf_Vendedores/ListarTodos" message="tns:IListarTodosOf_Vendedores_ListarTodos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IListarTodosOf_Vendedores/ListarTodosResponse" message="tns:IListarTodosOf_Vendedores_ListarTodos_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IAlterarOf_Vendedores">
+    <wsdl:operation name="Alterar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAlterarOf_Vendedores/Alterar" message="tns:IAlterarOf_Vendedores_Alterar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAlterarOf_Vendedores/AlterarResponse" message="tns:IAlterarOf_Vendedores_Alterar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IInserirOf_Vendedores" type="tns:IInserirOf_Vendedores">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Incluir">
+      <soap:operation soapAction="http://tempuri.org/IInserirOf_Vendedores/Incluir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IEntidadeOf_Vendedores" type="tns:IEntidadeOf_Vendedores">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Entidade">
+      <soap:operation soapAction="http://tempuri.org/IEntidadeOf_Vendedores/Entidade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IListarTodosOf_Vendedores" type="tns:IListarTodosOf_Vendedores">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarTodos">
+      <soap:operation soapAction="http://tempuri.org/IListarTodosOf_Vendedores/ListarTodos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IAlterarOf_Vendedores" type="tns:IAlterarOf_Vendedores">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Alterar">
+      <soap:operation soapAction="http://tempuri.org/IAlterarOf_Vendedores/Alterar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VendedoresService">
+    <wsdl:port name="BasicHttpBinding_IInserirOf_Vendedores" binding="tns:BasicHttpBinding_IInserirOf_Vendedores">
+      <soap:address location="http://66.232.110.156:81/VendedoresService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IEntidadeOf_Vendedores" binding="tns:BasicHttpBinding_IEntidadeOf_Vendedores">
+      <soap:address location="http://66.232.110.156:81/VendedoresService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IListarTodosOf_Vendedores" binding="tns:BasicHttpBinding_IListarTodosOf_Vendedores">
+      <soap:address location="http://66.232.110.156:81/VendedoresService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IAlterarOf_Vendedores" binding="tns:BasicHttpBinding_IAlterarOf_Vendedores">
+      <soap:address location="http://66.232.110.156:81/VendedoresService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

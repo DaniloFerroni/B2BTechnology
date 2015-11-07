@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA92C965-4950-4DA4-A168-B7FBCD4DE557}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>B2BSolution.Financeiro.Negocio</RootNamespace>
+    <AssemblyName>B2BSolution.Financeiro.Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\ITextSharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlterarNegocio.cs" />
+    <Compile Include="Arquivo.cs" />
+    <Compile Include="ClienteNegocio.cs" />
+    <Compile Include="ContatoNegocio.cs" />
+    <Compile Include="ContratoNegocio.cs" />
+    <Compile Include="DeletarNegocio.cs" />
+    <Compile Include="EnderecoNegocio.cs" />
+    <Compile Include="EquipamentosNegocio.cs" />
+    <Compile Include="InserirNegocio.cs" />
+    <Compile Include="ListarCodigo.cs" />
+    <Compile Include="ListarNegocio.cs" />
+    <Compile Include="PagamentosNegocio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelecionarEntidadeNegocio.cs" />
+    <Compile Include="VendedoresNegocio.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\B2BSolution.Financeiro.DataBase\B2BSolution.Financeiro.DataBase.csproj">
+      <Project>{1cadf786-d9d7-4b97-bc45-18fe977052b1}</Project>
+      <Name>B2BSolution.Financeiro.DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\B2BSolution.Financeiro.Entidades\B2BSolution.Financeiro.Entidades.csproj">
+      <Project>{e1051c92-3582-4535-be24-e51378842476}</Project>
+      <Name>B2BSolution.Financeiro.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\B2BSolution.Financeiro.Interfaces\B2BSolution.Financeiro.Interfaces.csproj">
+      <Project>{935bcb99-af2a-4aaa-921c-eee8cea7a537}</Project>
+      <Name>B2BSolution.Financeiro.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
