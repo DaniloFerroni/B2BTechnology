@@ -87,6 +87,8 @@
             this.txtValorInstalacao = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.gpbContrato = new System.Windows.Forms.GroupBox();
+            this.txtMensalidade = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.gpbValorTarifa = new System.Windows.Forms.GroupBox();
             this.txtValorTarifaVc2 = new System.Windows.Forms.MaskedTextBox();
             this.txtValorTarifaLdn = new System.Windows.Forms.MaskedTextBox();
@@ -102,8 +104,8 @@
             this.gpbDataVencimento = new System.Windows.Forms.GroupBox();
             this.lblIdContrato = new System.Windows.Forms.Label();
             this.txtDocumento = new System.Windows.Forms.MaskedTextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtMensalidade = new System.Windows.Forms.TextBox();
+            this.cmbListaClientes = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.grbContato.SuspendLayout();
             this.grbEndereco.SuspendLayout();
             this.grbTipoPessoa.SuspendLayout();
@@ -675,6 +677,22 @@
             this.gpbContrato.TabStop = false;
             this.gpbContrato.Text = "Informações Contratuais";
             // 
+            // txtMensalidade
+            // 
+            this.txtMensalidade.Location = new System.Drawing.Point(381, 72);
+            this.txtMensalidade.Name = "txtMensalidade";
+            this.txtMensalidade.Size = new System.Drawing.Size(100, 20);
+            this.txtMensalidade.TabIndex = 68;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(285, 75);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(73, 13);
+            this.label9.TabIndex = 67;
+            this.label9.Text = "Mensalidade: ";
+            // 
             // gpbValorTarifa
             // 
             this.gpbValorTarifa.Controls.Add(this.txtValorTarifaVc2);
@@ -822,27 +840,31 @@
             this.txtDocumento.Size = new System.Drawing.Size(172, 20);
             this.txtDocumento.TabIndex = 66;
             // 
-            // label9
+            // cmbListaClientes
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(285, 75);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 13);
-            this.label9.TabIndex = 67;
-            this.label9.Text = "Mensalidade: ";
+            this.cmbListaClientes.FormattingEnabled = true;
+            this.cmbListaClientes.Location = new System.Drawing.Point(81, 65);
+            this.cmbListaClientes.Name = "cmbListaClientes";
+            this.cmbListaClientes.Size = new System.Drawing.Size(268, 21);
+            this.cmbListaClientes.TabIndex = 67;
+            this.cmbListaClientes.SelectedIndexChanged += new System.EventHandler(this.cmbListaClientes_SelectedIndexChanged);
             // 
-            // txtMensalidade
+            // label10
             // 
-            this.txtMensalidade.Location = new System.Drawing.Point(381, 72);
-            this.txtMensalidade.Name = "txtMensalidade";
-            this.txtMensalidade.Size = new System.Drawing.Size(100, 20);
-            this.txtMensalidade.TabIndex = 68;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(13, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 13);
+            this.label10.TabIndex = 68;
+            this.label10.Text = "Clientes: ";
             // 
             // FormCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 641);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.cmbListaClientes);
             this.Controls.Add(this.txtDocumento);
             this.Controls.Add(this.gpbContrato);
             this.Controls.Add(this.btnSalvar);
@@ -954,6 +976,8 @@
         private System.Windows.Forms.MaskedTextBox txtCelular;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtMensalidade;
+        private System.Windows.Forms.ComboBox cmbListaClientes;
+        private System.Windows.Forms.Label label10;
 
     }
 }

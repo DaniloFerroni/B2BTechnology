@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="7h5OQS2M19NRbqDGFmF7E4FjyE8=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="hzbYqZITcHFq8ccoH+BKvL2rdmM=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IEntidadeOf_Contrato">
       <properties>
@@ -328,10 +328,10 @@
         </property>
       </properties>
     </bindingConfiguration>
-    <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IListarOf_Contrato">
+    <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IListarTodosOf_Contrato">
       <properties>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>BasicHttpBinding_IListarOf_Contrato</serializedValue>
+          <serializedValue>BasicHttpBinding_IListarTodosOf_Contrato</serializedValue>
         </property>
         <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -439,10 +439,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IEntidadeOf_Contrato" contract="ContratoService.IEntidadeOf_Contrato" bindingType="basicHttpBinding" address="http://66.232.110.156:81/ContratoService.svc" bindingConfiguration="BasicHttpBinding_IEntidadeOf_Contrato">
+    <endpoint name="BasicHttpBinding_IEntidadeOf_Contrato" contract="ContratoService.IEntidadeOf_Contrato" bindingType="basicHttpBinding" address="http://localhost:49407/ContratoService.svc" bindingConfiguration="BasicHttpBinding_IEntidadeOf_Contrato">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://66.232.110.156:81/ContratoService.svc</serializedValue>
+          <serializedValue>http://localhost:49407/ContratoService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -524,10 +524,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="BasicHttpBinding_IInserirOf_Contrato" contract="ContratoService.IInserirOf_Contrato" bindingType="basicHttpBinding" address="http://66.232.110.156:81/ContratoService.svc" bindingConfiguration="BasicHttpBinding_IInserirOf_Contrato">
+    <endpoint name="BasicHttpBinding_IInserirOf_Contrato" contract="ContratoService.IInserirOf_Contrato" bindingType="basicHttpBinding" address="http://localhost:49407/ContratoService.svc" bindingConfiguration="BasicHttpBinding_IInserirOf_Contrato">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://66.232.110.156:81/ContratoService.svc</serializedValue>
+          <serializedValue>http://localhost:49407/ContratoService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -609,10 +609,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="BasicHttpBinding_IAlterarOf_Contrato" contract="ContratoService.IAlterarOf_Contrato" bindingType="basicHttpBinding" address="http://66.232.110.156:81/ContratoService.svc" bindingConfiguration="BasicHttpBinding_IAlterarOf_Contrato">
+    <endpoint name="BasicHttpBinding_IAlterarOf_Contrato" contract="ContratoService.IAlterarOf_Contrato" bindingType="basicHttpBinding" address="http://localhost:49407/ContratoService.svc" bindingConfiguration="BasicHttpBinding_IAlterarOf_Contrato">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://66.232.110.156:81/ContratoService.svc</serializedValue>
+          <serializedValue>http://localhost:49407/ContratoService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -694,10 +694,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="BasicHttpBinding_IListarOf_Contrato" contract="ContratoService.IListarOf_Contrato" bindingType="basicHttpBinding" address="http://66.232.110.156:81/ContratoService.svc" bindingConfiguration="BasicHttpBinding_IListarOf_Contrato">
+    <endpoint name="BasicHttpBinding_IListarTodosOf_Contrato" contract="ContratoService.IListarTodosOf_Contrato" bindingType="basicHttpBinding" address="http://localhost:49407/ContratoService.svc" bindingConfiguration="BasicHttpBinding_IListarTodosOf_Contrato">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://66.232.110.156:81/ContratoService.svc</serializedValue>
+          <serializedValue>http://localhost:49407/ContratoService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -706,10 +706,10 @@
           <serializedValue>basicHttpBinding</serializedValue>
         </property>
         <property path="/bindingConfiguration" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>BasicHttpBinding_IListarOf_Contrato</serializedValue>
+          <serializedValue>BasicHttpBinding_IListarTodosOf_Contrato</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ContratoService.IListarOf_Contrato</serializedValue>
+          <serializedValue>ContratoService.IListarTodosOf_Contrato</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>
@@ -769,7 +769,7 @@
           <serializedValue>False</serializedValue>
         </property>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>BasicHttpBinding_IListarOf_Contrato</serializedValue>
+          <serializedValue>BasicHttpBinding_IListarTodosOf_Contrato</serializedValue>
         </property>
         <property path="/kind" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

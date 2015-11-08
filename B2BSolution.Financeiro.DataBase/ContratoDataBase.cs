@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 using B2BSolution.Financeiro.Interfaces;
 using B2BSolution.Financeiro.Entidades;
 
 namespace B2BSolution.Financeiro.DataBase
 {
-    public class ContratoDataBase : IInserir<Contrato>, IAlterar<Contrato>, IListar<Contrato>
+    public class ContratoDataBase : IInserir<Contrato>, IAlterar<Contrato>, IListarTodos<Contrato>
     {
         public int Incluir(Contrato entidades)
         {
@@ -68,14 +69,33 @@ namespace B2BSolution.Financeiro.DataBase
             ExecutarComando<Contrato>.ExecutarComandoSemRetorno("SPR_CONTRATO_ALTERAR", parametros);
         }
 
-        public List<Contrato> Listar(string codigo)
-        {
-            var parametros = new List<SqlParameter>
-            {
-                new SqlParameter{ParameterName = "@ID_CLIENTE", Value = codigo}
-            };
+        //public List<Contrato> Listar(string codigo)
+        //{
+        //    var parametros = new List<SqlParameter>
+        //    {
+        //        new SqlParameter{ParameterName = "@ID_CLIENTE", Value = codigo}
+        //    };
 
-            return ExecutarComando<Contrato>.RetornarListaTipada("SPR_CONTRATO_SELECIONAR", parametros);
+        //    return ExecutarComando<Contrato>.RetornarListaTipada("SPR_CONTRATO_SELECIONAR", parametros);
+        //}
+
+        public List<Contrato> ListarTodos(Contrato entidade)
+        {
+            try
+            {
+                var parametros = new List<SqlParameter>
+                {
+                    new SqlParameter{ParameterName = "@NOME", Value = entidade.Cliente.Nome},
+                    new SqlParameter{ParameterName = "@DOCUMENTO", Value = entidade.Cliente.Documento}
+                };
+
+                return ExecutarComando<Contrato>.RetornarListaTipada("SPR_CONTRATO_SELECIONAR", parametros);
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(string.Format("Contrato ListarTodos: {0}", ex.Message));
+            }
         }
     }
 }

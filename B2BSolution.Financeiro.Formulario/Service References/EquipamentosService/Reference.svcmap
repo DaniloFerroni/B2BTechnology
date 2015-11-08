@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://66.232.110.156:81/EquipamentosService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:49407/EquipamentosService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="EquipamentosService.xsd" MetadataType="Schema" ID="a94125a5-4224-47f5-821e-4c0216028e6e" SourceId="1" SourceUrl="http://66.232.110.156:81/EquipamentosService.svc?xsd=xsd2" />
-    <MetadataFile FileName="EquipamentosService.disco" MetadataType="Disco" ID="ce95d8af-7801-43f2-8a7d-5d9b887913bc" SourceId="1" SourceUrl="http://66.232.110.156:81/EquipamentosService.svc?disco" />
-    <MetadataFile FileName="EquipamentosService1.xsd" MetadataType="Schema" ID="4a8de2b5-ff6a-45b7-89ae-6d53af6095e1" SourceId="1" SourceUrl="http://66.232.110.156:81/EquipamentosService.svc?xsd=xsd1" />
-    <MetadataFile FileName="EquipamentosService2.xsd" MetadataType="Schema" ID="b4e464d7-c3bd-41ad-84b6-1f013b917e31" SourceId="1" SourceUrl="http://66.232.110.156:81/EquipamentosService.svc?xsd=xsd0" />
-    <MetadataFile FileName="EquipamentosService.wsdl" MetadataType="Wsdl" ID="143e6fb6-fe80-42e4-964d-4df069c15bf5" SourceId="1" SourceUrl="http://66.232.110.156:81/EquipamentosService.svc?wsdl" />
+    <MetadataFile FileName="EquipamentosService3.xsd" MetadataType="Schema" ID="469348f7-26c0-468c-a2da-192a832499a8" SourceId="1" SourceUrl="http://localhost:49407/EquipamentosService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EquipamentosService1.disco" MetadataType="Disco" ID="2a20b44c-5274-4dfd-b859-468a8dbdfad9" SourceId="1" SourceUrl="http://localhost:49407/EquipamentosService.svc?disco" />
+    <MetadataFile FileName="EquipamentosService31.xsd" MetadataType="Schema" ID="dd54777b-71b9-49ea-b380-ff5894d6ff86" SourceId="1" SourceUrl="http://localhost:49407/EquipamentosService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EquipamentosService32.xsd" MetadataType="Schema" ID="92bee6a0-fde9-45de-91b8-bf67d6b43ecb" SourceId="1" SourceUrl="http://localhost:49407/EquipamentosService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EquipamentosService1.wsdl" MetadataType="Wsdl" ID="8d6a8ab2-2b3a-48ed-bfc1-fd418ed25ab8" SourceId="1" SourceUrl="http://localhost:49407/EquipamentosService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

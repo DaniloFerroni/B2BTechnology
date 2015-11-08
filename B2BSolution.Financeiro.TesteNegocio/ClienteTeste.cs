@@ -19,7 +19,7 @@ namespace B2BSolution.Financeiro.TesteNegocio
         public void Contrato()
         {
             var cliente = new ContratoNegocio();
-            var c = cliente.SelecionarContrato("1234567892");
+            //var c = cliente.SelecionarContrato("1234567892");
         }
 
         [TestMethod]

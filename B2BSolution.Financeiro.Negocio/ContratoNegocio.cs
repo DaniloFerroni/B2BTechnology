@@ -17,12 +17,22 @@ namespace B2BSolution.Financeiro.Negocio
             //_equipamentosNegocio = new EquipamentosNegocio();
         }
 
-        private List<Contrato> SelecionarContratos(string codigo)
+        private List<Contrato> SelecionarContratos(Contrato contrato)
         {
             try
             {
-                var contrato = new ListarCodigo<Contrato>(new ContratoDataBase());
-                return contrato.ListarComCodigo(codigo);
+                if (contrato == null)
+                    contrato = new Contrato
+                    {
+                        Cliente = new Cliente
+                        {
+                            Documento = null,
+                            Nome = null
+                        }
+                    };
+
+                var contratoNegocio = new ListarNegocio<Contrato>(new ContratoDataBase());
+                return contratoNegocio.ListarEntidade(contrato);
             }
             catch (Exception ex)
             {
@@ -30,11 +40,12 @@ namespace B2BSolution.Financeiro.Negocio
             }
         }
 
-        public Contrato SelecionarContrato(string codigo)
+        public Contrato SelecionarContrato(Contrato contrato)
         {
             try
             {
-                return SelecionarContratos(codigo).FirstOrDefault();
+
+                return SelecionarContratos(contrato).FirstOrDefault();
             }
             catch (Exception ex)
             {
@@ -42,11 +53,11 @@ namespace B2BSolution.Financeiro.Negocio
             }
         }
 
-        public List<Contrato> SelecionarTodosContrato(string codigo)
+        public List<Contrato> SelecionarTodosContrato(Contrato contrato)
         {
             try
             {
-                return SelecionarContratos(codigo);
+                return SelecionarContratos(contrato);
             }
             catch (Exception ex)
             {
@@ -59,11 +70,7 @@ namespace B2BSolution.Financeiro.Negocio
             try
             {
                 var inserirContrato = new InserirNegocio<Contrato>(new ContratoDataBase());
-
-                var clienteNegocio = new ListarCodigo<Cliente>(new ClienteDataBase());
-                var cliente = clienteNegocio.ListarComCodigo(contrato.Cliente.Documento);
-                contrato.Cliente.IdCliente = !cliente.Any() ? _clienteNegocio.InserirCliente(contrato.Cliente) : cliente.First().IdCliente;
-                //contrato.Equipamento.IdEquipamento = _equipamentosNegocio.InserirEquipamento(contrato.Equipamento);
+                contrato.Cliente.IdCliente = _clienteNegocio.InserirCliente(contrato.Cliente);
 
                 return inserirContrato.InserirEntidade(contrato);
             }

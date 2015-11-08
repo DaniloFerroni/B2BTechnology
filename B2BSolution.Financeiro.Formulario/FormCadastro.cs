@@ -16,11 +16,13 @@ namespace B2BSolution.Financeiro.Formulario
 {
     public partial class FormCadastro : Form
     {
-        public FormCadastro(string documento)
+        private static List<Contrato> _listaContrato = new List<Contrato>();
+
+        public FormCadastro(string documento, string nome)
         {
             InitializeComponent();
             CarregarCombos();
-            SelecionarCliente(documento);
+            SelecionarCliente(documento, nome);
         }
 
         public FormCadastro()
@@ -185,7 +187,8 @@ namespace B2BSolution.Financeiro.Formulario
         private void InserirCadastro()
         {
             var contratoService = new InserirOf_ContratoClient("BasicHttpBinding_IInserirOf_Contrato");
-            contratoService.Incluir(CarregarPropriedadesContrato());
+            var contrato = CarregarPropriedadesContrato();
+            contratoService.Incluir(contrato);
         }
 
         private List<Equipamentos> CarregarEquipamentos()
@@ -318,7 +321,16 @@ namespace B2BSolution.Financeiro.Formulario
         {
             try
             {
-                SelecionarCliente(txtDocumento.Text.RemoverMascara());
+                if (string.IsNullOrEmpty(txtDocumento.Text.RemoverMascara()) && string.IsNullOrEmpty(txtNomePessoa.Text))
+                {
+                    MessageBox.Show("Nenhum Paramentro foi Selecionado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var documento = string.IsNullOrEmpty(txtDocumento.Text.RemoverMascara()) ? null : txtDocumento.Text.RemoverMascara();
+                var nome = string.IsNullOrEmpty(txtNomePessoa.Text) ? null : txtNomePessoa.Text.RemoverMascara();
+
+                SelecionarCliente(documento, nome);
             }
             catch (Exception ex)
             {
@@ -326,25 +338,62 @@ namespace B2BSolution.Financeiro.Formulario
             }
         }
 
-        private void SelecionarCliente(string documento)
+        private void SelecionarCliente(string documento, string nome)
         {
             try
             {
-                var contratoService = new EntidadeOf_ContratoClient("BasicHttpBinding_IEntidadeOf_Contrato");
-                var contrato = contratoService.Entidade(documento);
+                _listaContrato = SelecionarContrato(documento, nome);
 
-                if (contrato == null)
+                if (_listaContrato == null)
                 {
                     MessageBox.Show("Cliente não cadastrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                MostrarPropriedadesContrato(contrato);
+                if (_listaContrato.Count == 1)
+                {
+                    MostrarPropriedadesContrato(_listaContrato.First());
+                    cmbListaClientes.DataSource = null;
+                }
+                else
+                {
+                    var cliente = (from c in _listaContrato
+                        select new Cliente
+                        {
+                            Nome = c.Cliente.Nome,
+                            Documento = c.Cliente.Documento,
+                        }).ToList();
+                    cmbListaClientes.DataSource = cliente;
+                    cmbListaClientes.DisplayMember = "Nome";
+                    cmbListaClientes.ValueMember = "Documento";
+
+                    if (_listaContrato.Any())
+                        MostrarPropriedadesContrato(_listaContrato.First());
+
+                    txtDocumento.Focus();
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(string.Concat("SelecionarCliente: ", ex.Message), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private static List<Contrato> SelecionarContrato(string documento, string nome)
+        {
+            //var contratoService = new EntidadeOf_ContratoClient("BasicHttpBinding_IEntidadeOf_Contrato");
+            //var contrato = contratoService.Entidade(documento);
+            var contrato = new Contrato
+            {
+                Cliente = new Cliente
+                {
+                    Documento = documento,
+                    Nome = nome
+                }
+            };
+            var contratoService = new ListarTodosOf_ContratoClient("BasicHttpBinding_IListarTodosOf_Contrato");
+            var listaContrato = contratoService.ListarTodos(contrato);
+            return listaContrato.ToList();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -359,7 +408,8 @@ namespace B2BSolution.Financeiro.Formulario
                     return;
                 }
 
-                if (!"0".Equals(lblIdContrato.Text))
+                var contrato = SelecionarContrato(null, null).FirstOrDefault(c => c.Cliente.IdCliente.ToString() == lblIdCliente.Text);
+                if (contrato != null)
                     AlterarCadastro();
                 else
                     InserirCadastro();
@@ -396,6 +446,20 @@ namespace B2BSolution.Financeiro.Formulario
         private void rbPessoaFisica_CheckedChanged(object sender, EventArgs e)
         {
             txtDocumento.Mask = rbPessoaFisica.Checked ? "000.000.000-00" : "00.000.000/0000-00";
+        }
+
+        private void cmbListaClientes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var contrato = _listaContrato.FirstOrDefault( c => c.Cliente.Nome == cmbListaClientes.Text && c.Cliente.Documento == cmbListaClientes.SelectedValue);
+                if(contrato != null)
+                    MostrarPropriedadesContrato(contrato);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Concat("cmbListaClientes: ", ex.Message), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         #endregion

@@ -32,8 +32,8 @@ namespace B2BSolution.Financeiro.Formulario
                 button = CarregarButton(button, DateTime.Now.AddMonths(1).ToString("MM-yyyy"), "button4");
                 CarregarButton(button, DateTime.Now.AddMonths(2).ToString("MM-yyyy"), "button5");
 
-                var clienteService = new ListarOf_ContratoClient("BasicHttpBinding_IListarOf_Contrato");
-                _listaContratos = clienteService.Listar(null).ToList();
+                var clienteService = new ListarTodosOf_ContratoClient("BasicHttpBinding_IListarTodosOf_Contrato");
+                _listaContratos = clienteService.ListarTodos(null).ToList();
                 _listaCliente = _listaContratos.Select(c => new Cliente
                 {
                     Ativo = c.Cliente.Ativo,

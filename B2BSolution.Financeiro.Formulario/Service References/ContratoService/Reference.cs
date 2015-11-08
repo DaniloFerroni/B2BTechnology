@@ -153,49 +153,49 @@ namespace B2BSolution.Financeiro.Formulario.ContratoService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ContratoService.IListarOf_Contrato")]
-    public interface IListarOf_Contrato {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ContratoService.IListarTodosOf_Contrato")]
+    public interface IListarTodosOf_Contrato {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IListarOf_Contrato/Listar", ReplyAction="http://tempuri.org/IListarOf_Contrato/ListarResponse")]
-        B2BSolution.Financeiro.Entidades.Contrato[] Listar(string codigo);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IListarTodosOf_Contrato/ListarTodos", ReplyAction="http://tempuri.org/IListarTodosOf_Contrato/ListarTodosResponse")]
+        B2BSolution.Financeiro.Entidades.Contrato[] ListarTodos(B2BSolution.Financeiro.Entidades.Contrato entidade);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IListarOf_Contrato/Listar", ReplyAction="http://tempuri.org/IListarOf_Contrato/ListarResponse")]
-        System.Threading.Tasks.Task<B2BSolution.Financeiro.Entidades.Contrato[]> ListarAsync(string codigo);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IListarTodosOf_Contrato/ListarTodos", ReplyAction="http://tempuri.org/IListarTodosOf_Contrato/ListarTodosResponse")]
+        System.Threading.Tasks.Task<B2BSolution.Financeiro.Entidades.Contrato[]> ListarTodosAsync(B2BSolution.Financeiro.Entidades.Contrato entidade);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IListarOf_ContratoChannel : B2BSolution.Financeiro.Formulario.ContratoService.IListarOf_Contrato, System.ServiceModel.IClientChannel {
+    public interface IListarTodosOf_ContratoChannel : B2BSolution.Financeiro.Formulario.ContratoService.IListarTodosOf_Contrato, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ListarOf_ContratoClient : System.ServiceModel.ClientBase<B2BSolution.Financeiro.Formulario.ContratoService.IListarOf_Contrato>, B2BSolution.Financeiro.Formulario.ContratoService.IListarOf_Contrato {
+    public partial class ListarTodosOf_ContratoClient : System.ServiceModel.ClientBase<B2BSolution.Financeiro.Formulario.ContratoService.IListarTodosOf_Contrato>, B2BSolution.Financeiro.Formulario.ContratoService.IListarTodosOf_Contrato {
         
-        public ListarOf_ContratoClient() {
+        public ListarTodosOf_ContratoClient() {
         }
         
-        public ListarOf_ContratoClient(string endpointConfigurationName) : 
+        public ListarTodosOf_ContratoClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public ListarOf_ContratoClient(string endpointConfigurationName, string remoteAddress) : 
+        public ListarTodosOf_ContratoClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ListarOf_ContratoClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public ListarTodosOf_ContratoClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ListarOf_ContratoClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public ListarTodosOf_ContratoClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public B2BSolution.Financeiro.Entidades.Contrato[] Listar(string codigo) {
-            return base.Channel.Listar(codigo);
+        public B2BSolution.Financeiro.Entidades.Contrato[] ListarTodos(B2BSolution.Financeiro.Entidades.Contrato entidade) {
+            return base.Channel.ListarTodos(entidade);
         }
         
-        public System.Threading.Tasks.Task<B2BSolution.Financeiro.Entidades.Contrato[]> ListarAsync(string codigo) {
-            return base.Channel.ListarAsync(codigo);
+        public System.Threading.Tasks.Task<B2BSolution.Financeiro.Entidades.Contrato[]> ListarTodosAsync(B2BSolution.Financeiro.Entidades.Contrato entidade) {
+            return base.Channel.ListarTodosAsync(entidade);
         }
     }
 }

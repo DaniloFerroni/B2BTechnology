@@ -8,13 +8,21 @@ namespace B2BSolution.Financeiro.Service
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "ContratoService" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select ContratoService.svc or ContratoService.svc.cs at the Solution Explorer and start debugging.
-    public class ContratoService : IEntidade<Contrato>, IInserir<Contrato>, IAlterar<Contrato>, IListar<Contrato>
+    public class ContratoService : IEntidade<Contrato>, IInserir<Contrato>, IAlterar<Contrato>, IListarTodos<Contrato>
     {
         private readonly ContratoNegocio _contratoNegocio = new ContratoNegocio();
 
         public Contrato Entidade(string codigo)
         {
-            return _contratoNegocio.SelecionarContrato(codigo);
+            var contrato = new Contrato
+            {
+                Cliente = new Cliente
+                {
+                    Documento = codigo,
+                    Nome = null
+                }
+            };
+            return _contratoNegocio.SelecionarContrato(contrato);
         }
 
         public int Incluir(Contrato entidades)
@@ -27,9 +35,9 @@ namespace B2BSolution.Financeiro.Service
             _contratoNegocio.AlterarContrato(entidade);
         }
 
-        public List<Contrato> Listar(string codigo)
+        public List<Contrato> ListarTodos(Contrato entidade)
         {
-            return _contratoNegocio.SelecionarTodosContrato(codigo);
+            return _contratoNegocio.SelecionarTodosContrato(entidade);
         }
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="8f6A51FxVTK33jGPGaLI3yBmdnE=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="AN7E5yqkL4YDbbb6MoJ4KchplRI=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IInserirOf_Vendedores">
       <properties>
@@ -439,10 +439,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IInserirOf_Vendedores" contract="VendedoresService.IInserirOf_Vendedores" bindingType="basicHttpBinding" address="http://66.232.110.156:81/VendedoresService.svc" bindingConfiguration="BasicHttpBinding_IInserirOf_Vendedores">
+    <endpoint name="BasicHttpBinding_IInserirOf_Vendedores" contract="VendedoresService.IInserirOf_Vendedores" bindingType="basicHttpBinding" address="http://localhost:49407/VendedoresService.svc" bindingConfiguration="BasicHttpBinding_IInserirOf_Vendedores">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://66.232.110.156:81/VendedoresService.svc</serializedValue>
+          <serializedValue>http://localhost:49407/VendedoresService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -524,10 +524,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="BasicHttpBinding_IEntidadeOf_Vendedores" contract="VendedoresService.IEntidadeOf_Vendedores" bindingType="basicHttpBinding" address="http://66.232.110.156:81/VendedoresService.svc" bindingConfiguration="BasicHttpBinding_IEntidadeOf_Vendedores">
+    <endpoint name="BasicHttpBinding_IEntidadeOf_Vendedores" contract="VendedoresService.IEntidadeOf_Vendedores" bindingType="basicHttpBinding" address="http://localhost:49407/VendedoresService.svc" bindingConfiguration="BasicHttpBinding_IEntidadeOf_Vendedores">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://66.232.110.156:81/VendedoresService.svc</serializedValue>
+          <serializedValue>http://localhost:49407/VendedoresService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -609,10 +609,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="BasicHttpBinding_IListarTodosOf_Vendedores" contract="VendedoresService.IListarTodosOf_Vendedores" bindingType="basicHttpBinding" address="http://66.232.110.156:81/VendedoresService.svc" bindingConfiguration="BasicHttpBinding_IListarTodosOf_Vendedores">
+    <endpoint name="BasicHttpBinding_IListarTodosOf_Vendedores" contract="VendedoresService.IListarTodosOf_Vendedores" bindingType="basicHttpBinding" address="http://localhost:49407/VendedoresService.svc" bindingConfiguration="BasicHttpBinding_IListarTodosOf_Vendedores">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://66.232.110.156:81/VendedoresService.svc</serializedValue>
+          <serializedValue>http://localhost:49407/VendedoresService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -694,10 +694,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="BasicHttpBinding_IAlterarOf_Vendedores" contract="VendedoresService.IAlterarOf_Vendedores" bindingType="basicHttpBinding" address="http://66.232.110.156:81/VendedoresService.svc" bindingConfiguration="BasicHttpBinding_IAlterarOf_Vendedores">
+    <endpoint name="BasicHttpBinding_IAlterarOf_Vendedores" contract="VendedoresService.IAlterarOf_Vendedores" bindingType="basicHttpBinding" address="http://localhost:49407/VendedoresService.svc" bindingConfiguration="BasicHttpBinding_IAlterarOf_Vendedores">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://66.232.110.156:81/VendedoresService.svc</serializedValue>
+          <serializedValue>http://localhost:49407/VendedoresService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

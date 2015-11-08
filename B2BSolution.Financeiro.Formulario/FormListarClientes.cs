@@ -14,8 +14,8 @@ namespace B2BSolution.Financeiro.Formulario
             try
             {
                 InitializeComponent();
-                var clienteService = new ListarOf_ContratoClient("BasicHttpBinding_IListarOf_Contrato");
-                var listaContratos = clienteService.Listar(null).ToList();
+                var clienteService = new ListarTodosOf_ContratoClient("BasicHttpBinding_IListarTodosOf_Contrato");
+                var listaContratos = clienteService.ListarTodos(null).ToList();
 
                 dgvListaCliente.DataSource = (from contrato in listaContratos
                                               select new
@@ -37,8 +37,9 @@ namespace B2BSolution.Financeiro.Formulario
         private void dgvListaCliente_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             var numeroDocumento = dgvListaCliente.Rows[e.RowIndex].Cells["CNPJ_CPF"].Value.ToString().RemoverMascara();
+            var nome = dgvListaCliente.Rows[e.RowIndex].Cells["Nome"].Value.ToString().RemoverMascara();
             Close();
-            var formCadastro = new FormCadastro(numeroDocumento)
+            var formCadastro = new FormCadastro(numeroDocumento, nome)
             {
                 MdiParent = FormPrincipal.ActiveForm,
             };

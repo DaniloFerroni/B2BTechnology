@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://66.232.110.156:81/ContratoService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:49407/ContratoService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ContratoService.xsd" MetadataType="Schema" ID="30767ac1-fbd7-4137-bc1a-5d9d92c95330" SourceId="1" SourceUrl="http://66.232.110.156:81/ContratoService.svc?xsd=xsd1" />
-    <MetadataFile FileName="ContratoService1.xsd" MetadataType="Schema" ID="8565af1d-753e-466c-9e7b-994f51da7f6b" SourceId="1" SourceUrl="http://66.232.110.156:81/ContratoService.svc?xsd=xsd0" />
-    <MetadataFile FileName="ContratoService.wsdl" MetadataType="Wsdl" ID="420e12d7-c8f2-4fcc-919d-42f4e69f6d09" SourceId="1" SourceUrl="http://66.232.110.156:81/ContratoService.svc?wsdl" />
-    <MetadataFile FileName="ContratoService.disco" MetadataType="Disco" ID="79533c76-f3c0-4e44-8011-6270c8e94662" SourceId="1" SourceUrl="http://66.232.110.156:81/ContratoService.svc?disco" />
-    <MetadataFile FileName="ContratoService2.xsd" MetadataType="Schema" ID="42696d62-b9eb-4077-a97e-bef4f0392f71" SourceId="1" SourceUrl="http://66.232.110.156:81/ContratoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ContratoService3.xsd" MetadataType="Schema" ID="e9b2e9ea-f05a-4a7c-aff5-77c058369440" SourceId="1" SourceUrl="http://localhost:49407/ContratoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ContratoService31.xsd" MetadataType="Schema" ID="52a1a7af-97ac-4bed-8197-17927b996f74" SourceId="1" SourceUrl="http://localhost:49407/ContratoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ContratoService1.disco" MetadataType="Disco" ID="095486db-8f07-4910-8a8a-a34d327a4868" SourceId="1" SourceUrl="http://localhost:49407/ContratoService.svc?disco" />
+    <MetadataFile FileName="ContratoService32.xsd" MetadataType="Schema" ID="b96c2868-b53b-4003-975e-0b07e9d88d29" SourceId="1" SourceUrl="http://localhost:49407/ContratoService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ContratoService1.wsdl" MetadataType="Wsdl" ID="b708832a-4cdf-4b0e-a826-af67f52fb9f7" SourceId="1" SourceUrl="http://localhost:49407/ContratoService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
