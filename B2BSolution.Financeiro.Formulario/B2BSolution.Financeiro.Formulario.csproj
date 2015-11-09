@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>18</ApplicationRevision>
+    <ApplicationRevision>22</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -243,54 +243,54 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\ClienteService\ClienteService1.wsdl" />
-    <None Include="Service References\ClienteService\ClienteService3.xsd">
+    <None Include="Service References\ClienteService\ClienteService.wsdl" />
+    <None Include="Service References\ClienteService\ClienteService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClienteService\ClienteService31.xsd">
+    <None Include="Service References\ClienteService\ClienteService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClienteService\ClienteService32.xsd">
+    <None Include="Service References\ClienteService\ClienteService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ContratoService\ContratoService1.wsdl" />
-    <None Include="Service References\ContratoService\ContratoService3.xsd">
+    <None Include="Service References\ContratoService\ContratoService.wsdl" />
+    <None Include="Service References\ContratoService\ContratoService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ContratoService\ContratoService31.xsd">
+    <None Include="Service References\ContratoService\ContratoService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ContratoService\ContratoService32.xsd">
+    <None Include="Service References\ContratoService\ContratoService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\EquipamentosService\EquipamentosService1.wsdl" />
-    <None Include="Service References\EquipamentosService\EquipamentosService3.xsd">
+    <None Include="Service References\EquipamentosService\EquipamentosService.wsdl" />
+    <None Include="Service References\EquipamentosService\EquipamentosService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\EquipamentosService\EquipamentosService31.xsd">
+    <None Include="Service References\EquipamentosService\EquipamentosService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\EquipamentosService\EquipamentosService32.xsd">
+    <None Include="Service References\EquipamentosService\EquipamentosService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\PagamentoService\PagamentoService1.wsdl" />
-    <None Include="Service References\PagamentoService\PagamentoService3.xsd">
+    <None Include="Service References\PagamentoService\PagamentoService.wsdl" />
+    <None Include="Service References\PagamentoService\PagamentoService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\PagamentoService\PagamentoService31.xsd">
+    <None Include="Service References\PagamentoService\PagamentoService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\PagamentoService\PagamentoService32.xsd">
+    <None Include="Service References\PagamentoService\PagamentoService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\VendedoresService\VendedoresService1.wsdl" />
-    <None Include="Service References\VendedoresService\VendedoresService3.xsd">
+    <None Include="Service References\VendedoresService\VendedoresService.wsdl" />
+    <None Include="Service References\VendedoresService\VendedoresService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\VendedoresService\VendedoresService31.xsd">
+    <None Include="Service References\VendedoresService\VendedoresService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\VendedoresService\VendedoresService32.xsd">
+    <None Include="Service References\VendedoresService\VendedoresService2.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -398,11 +398,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Logo.ico" />
-    <None Include="Service References\VendedoresService\VendedoresService1.disco" />
-    <None Include="Service References\PagamentoService\PagamentoService1.disco" />
-    <None Include="Service References\EquipamentosService\EquipamentosService1.disco" />
-    <None Include="Service References\ContratoService\ContratoService1.disco" />
-    <None Include="Service References\ClienteService\ClienteService1.disco" />
+    <None Include="Service References\VendedoresService\VendedoresService.disco" />
+    <None Include="Service References\PagamentoService\PagamentoService.disco" />
+    <None Include="Service References\EquipamentosService\EquipamentosService.disco" />
+    <None Include="Service References\ContratoService\ContratoService.disco" />
+    <None Include="Service References\ClienteService\ClienteService.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

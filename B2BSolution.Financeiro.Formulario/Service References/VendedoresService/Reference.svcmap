@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:49407/VendedoresService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://66.232.110.156:81/VendedoresService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="VendedoresService1.wsdl" MetadataType="Wsdl" ID="91afdf93-14e4-4ad5-b557-3395a3c3befc" SourceId="1" SourceUrl="http://localhost:49407/VendedoresService.svc?wsdl" />
-    <MetadataFile FileName="VendedoresService3.xsd" MetadataType="Schema" ID="f3423f78-d605-459c-b67f-d8d5af932846" SourceId="1" SourceUrl="http://localhost:49407/VendedoresService.svc?xsd=xsd2" />
-    <MetadataFile FileName="VendedoresService1.disco" MetadataType="Disco" ID="db538058-0122-4b13-a7e3-54211e101d35" SourceId="1" SourceUrl="http://localhost:49407/VendedoresService.svc?disco" />
-    <MetadataFile FileName="VendedoresService31.xsd" MetadataType="Schema" ID="933e52e4-0875-4d48-8914-8a9e7c9609cd" SourceId="1" SourceUrl="http://localhost:49407/VendedoresService.svc?xsd=xsd0" />
-    <MetadataFile FileName="VendedoresService32.xsd" MetadataType="Schema" ID="ad6094d0-e2b6-4647-a51f-816bebcb4a4d" SourceId="1" SourceUrl="http://localhost:49407/VendedoresService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VendedoresService.xsd" MetadataType="Schema" ID="eb8d2ff3-678d-4096-9f13-15e72327eb34" SourceId="1" SourceUrl="http://66.232.110.156:81/VendedoresService.svc?xsd=xsd2" />
+    <MetadataFile FileName="VendedoresService1.xsd" MetadataType="Schema" ID="e9162eff-c355-4b16-aeac-5c3a6f667001" SourceId="1" SourceUrl="http://66.232.110.156:81/VendedoresService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VendedoresService.disco" MetadataType="Disco" ID="fafc6ebb-4262-497d-a7b1-fba029e7d13e" SourceId="1" SourceUrl="http://66.232.110.156:81/VendedoresService.svc?disco" />
+    <MetadataFile FileName="VendedoresService2.xsd" MetadataType="Schema" ID="7b8e2bbb-6961-4b9f-97f3-c935576496a3" SourceId="1" SourceUrl="http://66.232.110.156:81/VendedoresService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VendedoresService.wsdl" MetadataType="Wsdl" ID="806d27a2-c101-4305-9cb5-678555f52b83" SourceId="1" SourceUrl="http://66.232.110.156:81/VendedoresService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

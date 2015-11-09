@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:49407/ClienteService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://66.232.110.156:81/ClienteService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ClienteService3.xsd" MetadataType="Schema" ID="d4b00e93-2591-4eb8-ab21-d3c38bc898e5" SourceId="1" SourceUrl="http://localhost:49407/ClienteService.svc?xsd=xsd2" />
-    <MetadataFile FileName="ClienteService31.xsd" MetadataType="Schema" ID="127392ac-6fbc-49aa-8a4e-8c82b5a3be0d" SourceId="1" SourceUrl="http://localhost:49407/ClienteService.svc?xsd=xsd1" />
-    <MetadataFile FileName="ClienteService32.xsd" MetadataType="Schema" ID="f1e4b528-ca9c-4810-85f9-cd1915ccf6c0" SourceId="1" SourceUrl="http://localhost:49407/ClienteService.svc?xsd=xsd0" />
-    <MetadataFile FileName="ClienteService1.wsdl" MetadataType="Wsdl" ID="e5f2ff76-d7bb-44a9-aaa6-172427060e1c" SourceId="1" SourceUrl="http://localhost:49407/ClienteService.svc?wsdl" />
-    <MetadataFile FileName="ClienteService1.disco" MetadataType="Disco" ID="470531ed-e6ef-42b2-b035-9bd471bd12f5" SourceId="1" SourceUrl="http://localhost:49407/ClienteService.svc?disco" />
+    <MetadataFile FileName="ClienteService.wsdl" MetadataType="Wsdl" ID="913973ae-5f05-4f30-807a-63ee2b302d00" SourceId="1" SourceUrl="http://66.232.110.156:81/ClienteService.svc?wsdl" />
+    <MetadataFile FileName="ClienteService.xsd" MetadataType="Schema" ID="952f5f5a-4694-4259-8518-9ec988dd9800" SourceId="1" SourceUrl="http://66.232.110.156:81/ClienteService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ClienteService1.xsd" MetadataType="Schema" ID="29a5b217-a84e-41d3-83ca-24858a903d08" SourceId="1" SourceUrl="http://66.232.110.156:81/ClienteService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ClienteService2.xsd" MetadataType="Schema" ID="b2f994bf-d4e2-4e4f-a64e-caf5fc4fc55a" SourceId="1" SourceUrl="http://66.232.110.156:81/ClienteService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ClienteService.disco" MetadataType="Disco" ID="07c87827-ca96-4e57-a42d-85adcee65908" SourceId="1" SourceUrl="http://66.232.110.156:81/ClienteService.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

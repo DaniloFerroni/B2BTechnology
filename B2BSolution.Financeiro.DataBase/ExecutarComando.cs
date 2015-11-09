@@ -9,8 +9,8 @@ namespace B2BSolution.Financeiro.DataBase
 {
     public class ExecutarComando<T> where T : class, new()
     {
-        private readonly static string stringConexao = @"Password=#b2b2015financeiro;Persist Security Info=True;User ID=b2bsolution;Initial Catalog=B2BSolution;Data Source=DANILO-PC\SQLEXPRESS;MultipleActiveResultSets=true;";
-        //private readonly static string stringConexao = @"Password=#b2b2015financeiro;Persist Security Info=True;User ID=b2bsolution;Initial Catalog=B2BSolution;Data Source=FSMSERVER\SQLEXPRESS;MultipleActiveResultSets=true;";
+        //private readonly static string stringConexao = @"Password=#b2b2015financeiro;Persist Security Info=True;User ID=b2bsolution;Initial Catalog=B2BSolution;Data Source=DANILO-PC\SQLEXPRESS;MultipleActiveResultSets=true;";
+        private readonly static string stringConexao = @"Password=#b2b2015financeiro;Persist Security Info=True;User ID=b2bsolution;Initial Catalog=B2BSolution;Data Source=FSMSERVER\SQLEXPRESS;MultipleActiveResultSets=true;";
 
         public static bool ExecutarComandoSemRetorno(string procedure, List<SqlParameter> parametros)
         {

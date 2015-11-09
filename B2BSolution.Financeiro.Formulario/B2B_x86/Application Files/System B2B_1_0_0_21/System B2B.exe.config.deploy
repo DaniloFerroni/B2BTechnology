@@ -23,9 +23,9 @@
                 <binding name="BasicHttpBinding_IListarTodosOf_Pagamento" />
                 <binding name="BasicHttpBinding_IEntidadeOf_Pagamento" />
                 <binding name="BasicHttpBinding_IListarOf_Cliente" />
-                <binding name="BasicHttpBinding_IListarOf_Contrato" />
                 <binding name="BasicHttpBinding_IParametroListaOf_Pagamento" />
                 <binding name="BasicHttpBinding_IDeletar" />
+                <binding name="BasicHttpBinding_IListarTodosOf_Contrato" />
             </basicHttpBinding>
         </bindings>
       <!--192.168.2.14:81-->
@@ -53,8 +53,8 @@
           binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IAlterarOf_Contrato"
           contract="ContratoService.IAlterarOf_Contrato" name="BasicHttpBinding_IAlterarOf_Contrato" />
         <endpoint address="http://66.232.110.156:81/ContratoService.svc"
-          binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IListarOf_Contrato"
-          contract="ContratoService.IListarOf_Contrato" name="BasicHttpBinding_IListarOf_Contrato" />
+          binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IListarTodosOf_Contrato"
+          contract="ContratoService.IListarTodosOf_Contrato" name="BasicHttpBinding_IListarTodosOf_Contrato" />
         <endpoint address="http://66.232.110.156:81/EquipamentosService.svc"
           binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IInserirOf_Equipamentos"
           contract="EquipamentosService.IInserirOf_Equipamentos" name="BasicHttpBinding_IInserirOf_Equipamentos" />
