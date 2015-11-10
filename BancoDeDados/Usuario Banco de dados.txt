@@ -1,2 +1,0 @@
-usuario: b2bsolution
-senha: #b2b2015financeiro
