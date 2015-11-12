@@ -1,0 +1,40 @@
+USE [B2BSolution]
+GO
+
+/****** Object:  StoredProcedure [dbo].[SPR_CONTATO_INSERIR]    Script Date: 11/12/2015 17:54:41 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPR_CONTATO_INSERIR]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[SPR_CONTATO_INSERIR]
+GO
+
+USE [B2BSolution]
+GO
+
+/****** Object:  StoredProcedure [dbo].[SPR_CONTATO_INSERIR]    Script Date: 11/12/2015 17:54:41 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROC [dbo].[SPR_CONTATO_INSERIR]
+(
+	@NOME			VARCHAR(100),
+	@EMAIL			VARCHAR	(200),
+	@TELEFONE		VARCHAR	(10),
+	@CELULAR		VARCHAR	(11)
+)
+AS
+BEGIN
+
+	INSERT INTO TB_CONTATO
+	(NOME, EMAIL, TELEFONE, CELULAR)
+	VALUES
+	(@NOME, @EMAIL, @TELEFONE, @CELULAR)
+	
+	SELECT @@IDENTITY	 
+
+END
+
+GO
+
+

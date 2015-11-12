@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>B2BSolution.Financeiro.Scripts</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{9cd45efb-a279-4bfe-b903-f9967ff4ab04}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>B2BSolution.Financeiro.Scripts</RootNamespace>
+    <AssemblyName>B2BSolution.Financeiro.Scripts</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Procedures" />
+    <Folder Include="Tabelas" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tabelas\TB_CLIENTE.sql" />
+    <Build Include="Tabelas\TB_CONTATO.sql" />
+    <Build Include="Tabelas\TB_CONTRATO.sql" />
+    <Build Include="Tabelas\TB_ENDERECO.sql" />
+    <Build Include="Tabelas\TB_EQUIPAMENTOS.sql" />
+    <Build Include="Tabelas\TB_PAGAMENTO.sql" />
+    <Build Include="Tabelas\TB_PRAZO_CONTRATUAL.sql" />
+    <Build Include="Tabelas\TB_TIPO_VENDEDORES.sql" />
+    <Build Include="Tabelas\TB_VENDEDORES.sql" />
+    <Build Include="Procedures\SPR_CLIENTE_ALTERAR.sql" />
+    <Build Include="Procedures\SPR_CLIENTE_INSERIR.sql" />
+    <Build Include="Procedures\SPR_CLIENTE_SELECIONAR.sql" />
+    <Build Include="Procedures\SPR_CONTATO_ALTERAR.sql" />
+    <Build Include="Procedures\SPR_CONTATO_INSERIR.sql" />
+    <Build Include="Procedures\SPR_CONTRATO_ALTERAR.sql" />
+    <Build Include="Procedures\SPR_CONTRATO_INSERIR.sql" />
+    <Build Include="Procedures\SPR_CONTRATO_SELECIONAR.sql" />
+    <Build Include="Procedures\SPR_ENDERECO_ALTERAR.sql" />
+    <Build Include="Procedures\SPR_ENDERECO_INSERIR.sql" />
+    <Build Include="Procedures\SPR_EQUIPAMENTOS_INSERIR.sql" />
+    <Build Include="Procedures\SPR_EQUIPAMENTOS_SELECIONAR.sql" />
+    <Build Include="Procedures\SPR_EQUIPES_INSERIR.sql" />
+    <Build Include="Procedures\SPR_PAGAMENTO_ALTERAR.sql" />
+    <Build Include="Procedures\SPR_PAGAMENTO_DELETAR.sql" />
+    <Build Include="Procedures\SPR_PAGAMENTO_INSERIR.sql" />
+    <Build Include="Procedures\SPR_PAGAMENTO_SELECIONAR.sql" />
+    <Build Include="Procedures\SPR_VENDEDORES_ALTERAR.sql" />
+    <Build Include="Procedures\SPR_VENDEDORES_INSERIR.sql" />
+    <Build Include="Procedures\SPR_VENDEDORES_SELECIONAR.sql" />
+    <Build Include="Grant.sql" />
+    <Build Include="Login DB.sql" />
+  </ItemGroup>
+</Project>

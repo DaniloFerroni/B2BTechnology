@@ -1,0 +1,42 @@
+USE [B2BSolution]
+GO
+
+/****** Object:  Table [dbo].[TB_ENDERECO]    Script Date: 11/12/2015 17:59:43 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[TB_ENDERECO]') AND type in (N'U'))
+DROP TABLE [dbo].[TB_ENDERECO]
+GO
+
+USE [B2BSolution]
+GO
+
+/****** Object:  Table [dbo].[TB_ENDERECO]    Script Date: 11/12/2015 17:59:43 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[TB_ENDERECO](
+	[ID_ENDERECO] [int] IDENTITY(1,1) NOT NULL,
+	[RUA] [varchar](200) NULL,
+	[NUMERO] [varchar](6) NULL,
+	[COMPLEMENTO] [varchar](50) NULL,
+	[CEP] [varchar](8) NULL,
+	[BAIRRO] [varchar](100) NULL,
+	[CIDADE] [varchar](50) NULL,
+	[ESTADO] [varchar](2) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID_ENDERECO] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

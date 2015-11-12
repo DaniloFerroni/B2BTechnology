@@ -1,0 +1,35 @@
+USE [B2BSolution]
+GO
+
+/****** Object:  StoredProcedure [dbo].[SPR_PAGAMENTO_ALTERAR]    Script Date: 11/12/2015 17:56:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPR_PAGAMENTO_ALTERAR]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[SPR_PAGAMENTO_ALTERAR]
+GO
+
+USE [B2BSolution]
+GO
+
+/****** Object:  StoredProcedure [dbo].[SPR_PAGAMENTO_ALTERAR]    Script Date: 11/12/2015 17:56:49 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROC [dbo].[SPR_PAGAMENTO_ALTERAR]
+(
+	@ID_PAGAMENTO	INT	= NULL,
+	@FL_PAGO		BIT
+)
+AS
+BEGIN
+
+	UPDATE TB_PAGAMENTO
+	   SET FL_PAGO = @FL_PAGO
+	 WHERE ID_PAGAMENTO = @ID_PAGAMENTO
+
+END
+GO
+
+

@@ -1,0 +1,33 @@
+USE [B2BSolution]
+GO
+
+/****** Object:  StoredProcedure [dbo].[SPR_PAGAMENTO_DELETAR]    Script Date: 11/12/2015 17:57:03 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPR_PAGAMENTO_DELETAR]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[SPR_PAGAMENTO_DELETAR]
+GO
+
+USE [B2BSolution]
+GO
+
+/****** Object:  StoredProcedure [dbo].[SPR_PAGAMENTO_DELETAR]    Script Date: 11/12/2015 17:57:03 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROC [dbo].[SPR_PAGAMENTO_DELETAR]
+(
+	@ID_PAGAMENTO	INT
+)
+AS
+BEGIN
+
+	DELETE FROM TB_PAGAMENTO
+	WHERE ID_PAGAMENTO = @ID_PAGAMENTO
+
+END
+GO
+
+
