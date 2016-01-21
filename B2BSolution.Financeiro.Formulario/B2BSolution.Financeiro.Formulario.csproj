@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>22</ApplicationRevision>
+    <ApplicationRevision>28</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -401,8 +401,8 @@
     <None Include="Service References\VendedoresService\VendedoresService.disco" />
     <None Include="Service References\PagamentoService\PagamentoService.disco" />
     <None Include="Service References\EquipamentosService\EquipamentosService.disco" />
-    <None Include="Service References\ContratoService\ContratoService.disco" />
     <None Include="Service References\ClienteService\ClienteService.disco" />
+    <None Include="Service References\ContratoService\ContratoService.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

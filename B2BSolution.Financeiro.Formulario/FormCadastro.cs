@@ -204,6 +204,9 @@ namespace B2BSolution.Financeiro.Formulario
                 new Equipamentos{IdEquipamento = 0, Marca = "Selecione"},
             };
             listEquipamenos.AddRange(CarregarEquipamentos());
+
+            listEquipamenos.Where(c => c.IdEquipamento != 0).ToList().ForEach(c => c.Marca = string.Format("{0}/{1}", c.NumeroSerie, c.Marca));
+
             cmbEquipamento.DataSource = listEquipamenos;
             cmbEquipamento.DisplayMember = "marca";
             cmbEquipamento.ValueMember = "idequipamento";

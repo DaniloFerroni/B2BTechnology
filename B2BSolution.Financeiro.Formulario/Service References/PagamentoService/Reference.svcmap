@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://66.232.110.156:81/PagamentoService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://66.232.110.155:81/PagamentoService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="PagamentoService.xsd" MetadataType="Schema" ID="77326d5d-fc99-4ca7-9c5c-202372ee9af2" SourceId="1" SourceUrl="http://66.232.110.156:81/PagamentoService.svc?xsd=xsd1" />
-    <MetadataFile FileName="PagamentoService1.xsd" MetadataType="Schema" ID="5e149b92-7a07-4f3d-ad11-312933692c4d" SourceId="1" SourceUrl="http://66.232.110.156:81/PagamentoService.svc?xsd=xsd2" />
-    <MetadataFile FileName="PagamentoService.wsdl" MetadataType="Wsdl" ID="9292e1b9-39b3-4666-806d-a08167d861e6" SourceId="1" SourceUrl="http://66.232.110.156:81/PagamentoService.svc?wsdl" />
-    <MetadataFile FileName="PagamentoService2.xsd" MetadataType="Schema" ID="94b5b2f6-dce1-45b9-a626-5163a54bc0ae" SourceId="1" SourceUrl="http://66.232.110.156:81/PagamentoService.svc?xsd=xsd0" />
-    <MetadataFile FileName="PagamentoService.disco" MetadataType="Disco" ID="c5f49ef6-e2ff-4461-a1e0-fecfa28017db" SourceId="1" SourceUrl="http://66.232.110.156:81/PagamentoService.svc?disco" />
+    <MetadataFile FileName="PagamentoService.disco" MetadataType="Disco" ID="3d87a7de-4c66-4103-9619-c105eb960ec3" SourceId="1" SourceUrl="http://66.232.110.155:81/PagamentoService.svc?disco" />
+    <MetadataFile FileName="PagamentoService.xsd" MetadataType="Schema" ID="cf2ecdff-401a-449a-9231-8e94170a1844" SourceId="1" SourceUrl="http://66.232.110.155:81/PagamentoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PagamentoService.wsdl" MetadataType="Wsdl" ID="3df801b6-b89b-4b8a-ab85-1933dce5b3ed" SourceId="1" SourceUrl="http://66.232.110.155:81/PagamentoService.svc?wsdl" />
+    <MetadataFile FileName="PagamentoService1.xsd" MetadataType="Schema" ID="922f1ee3-dee5-43bb-a5f6-9de474eb5fe0" SourceId="1" SourceUrl="http://66.232.110.155:81/PagamentoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PagamentoService2.xsd" MetadataType="Schema" ID="4905eb45-82ac-4ebf-b399-68891067a872" SourceId="1" SourceUrl="http://66.232.110.155:81/PagamentoService.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

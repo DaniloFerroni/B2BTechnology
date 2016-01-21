@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://66.232.110.156:81/ClienteService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://66.232.110.155:81/ClienteService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ClienteService.wsdl" MetadataType="Wsdl" ID="913973ae-5f05-4f30-807a-63ee2b302d00" SourceId="1" SourceUrl="http://66.232.110.156:81/ClienteService.svc?wsdl" />
-    <MetadataFile FileName="ClienteService.xsd" MetadataType="Schema" ID="952f5f5a-4694-4259-8518-9ec988dd9800" SourceId="1" SourceUrl="http://66.232.110.156:81/ClienteService.svc?xsd=xsd1" />
-    <MetadataFile FileName="ClienteService1.xsd" MetadataType="Schema" ID="29a5b217-a84e-41d3-83ca-24858a903d08" SourceId="1" SourceUrl="http://66.232.110.156:81/ClienteService.svc?xsd=xsd2" />
-    <MetadataFile FileName="ClienteService2.xsd" MetadataType="Schema" ID="b2f994bf-d4e2-4e4f-a64e-caf5fc4fc55a" SourceId="1" SourceUrl="http://66.232.110.156:81/ClienteService.svc?xsd=xsd0" />
-    <MetadataFile FileName="ClienteService.disco" MetadataType="Disco" ID="07c87827-ca96-4e57-a42d-85adcee65908" SourceId="1" SourceUrl="http://66.232.110.156:81/ClienteService.svc?disco" />
+    <MetadataFile FileName="ClienteService.disco" MetadataType="Disco" ID="250e3a89-d8ba-474e-90c4-e34ba0c418bc" SourceId="1" SourceUrl="http://66.232.110.155:81/ClienteService.svc?disco" />
+    <MetadataFile FileName="ClienteService.wsdl" MetadataType="Wsdl" ID="8bdb59c7-e1ef-4fca-a333-8ee42c04b2e1" SourceId="1" SourceUrl="http://66.232.110.155:81/ClienteService.svc?wsdl" />
+    <MetadataFile FileName="ClienteService.xsd" MetadataType="Schema" ID="8c9733d9-385e-4e95-837b-bf46aec5b264" SourceId="1" SourceUrl="http://66.232.110.155:81/ClienteService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ClienteService1.xsd" MetadataType="Schema" ID="62c52510-3e01-4671-80bd-9cfee214f117" SourceId="1" SourceUrl="http://66.232.110.155:81/ClienteService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ClienteService2.xsd" MetadataType="Schema" ID="e30fccc3-6eb8-46fd-ba80-61b53dd61df1" SourceId="1" SourceUrl="http://66.232.110.155:81/ClienteService.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
